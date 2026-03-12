@@ -3,7 +3,7 @@
 
 #include "Stack.hpp"
 #include <iostream>
-using namespace std;
+#include <string>
 
 template <typename T>
 class ArrayStack : public Stack<T> {
@@ -59,7 +59,7 @@ class ArrayStack : public Stack<T> {
 
         // overloaded stream insertion operator to make printing easier
         template <typename U>
-        friend ostream& operator<<(ostream&, const ArrayStack<U>&);
+        friend std::ostream& operator<<(std::ostream&, const ArrayStack<U>&);
 };
 
 #include "ArrayStack.tpp"
